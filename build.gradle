@@ -1,0 +1,46 @@
+buildscript {
+    ext {
+        depManagementVersion = "0.5.1.RELEASE"
+    }
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+}
+
+allprojects {
+    group 'com.automation'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    idea {
+        module {
+            outputDir file('build/classes/java/main')
+            testOutputDir file('build/classes/java/test')
+        }
+    }
+
+    dependencies {
+        compile "org.projectlombok:lombok:1.16.18"
+        compile "com.google.code.gson:gson:2.8.2"
+
+        testCompile "org.testng:testng:6.13.1"
+        testCompile "org.hamcrest:hamcrest-all:1.3"
+    }
+}
+
+// gradle smoke cucumber
+// gradle clean compileTest generateProperties
+// gradle single -Ptags=@ID-2 cucumber

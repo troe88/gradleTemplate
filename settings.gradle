@@ -1,0 +1,9 @@
+rootProject.name = 'lebedev'
+
+include "utils"
+include "cucumber-tests"
+include 'page-objects'
+include 'api'
+include 'entities'
+include 'data'
+

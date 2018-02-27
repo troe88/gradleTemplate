@@ -1,0 +1,8 @@
+group 'com.automation'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    compile project(":entities")
+    compile project(":utils")
+    compile "com.epam.jdi:jdi-uitest-web:1.0.71"
+}

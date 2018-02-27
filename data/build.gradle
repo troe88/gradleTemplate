@@ -1,0 +1,6 @@
+group 'com.automation'
+
+dependencies {
+    compile project(":entities")
+    compile project(":utils")
+}

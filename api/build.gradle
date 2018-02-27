@@ -1,0 +1,7 @@
+group 'com.automation'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    compile 'com.jayway.restassured:rest-assured:2.4.1'
+    compile 'com.jayway.restassured:json-path:2.4.1'
+}

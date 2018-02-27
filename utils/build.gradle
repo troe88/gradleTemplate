@@ -1,0 +1,5 @@
+apply plugin: 'java'
+
+dependencies {
+    compile "org.aeonbits.owner:owner-java8:1.0.9"
+}
